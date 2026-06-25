@@ -1,3 +1,4 @@
+# Distributed Systems: Customizable Load Balancer
 
 ## 1. Project Core Objective
 [cite_start]The goal of this project is to implement a customizable, asynchronous load balancer that routes client HTTP requests across a dynamically scalable cluster of web server containers[cite: 33, 79]. [cite_start]To achieve an even distribution of traffic and prevent massive cache-miss reshuffles when servers scale up or down, the system utilizes a **Consistent Hashing Data Structure**[cite: 33, 36, 185]. 
