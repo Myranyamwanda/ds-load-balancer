@@ -3,12 +3,6 @@
 ## 1. Project Overview
 This project implements a customizable load balancer that asynchronously manages and distributes client requests across multiple containerized server replicas using a consistent hashing algorithm. The primary goal is to maintain a scalable, fault-tolerant cluster (maintaining $N=3$ default server instances) capable of dynamically adjusting to load demands and recovering from single-point-of-failure server crashes.
 
-### Group Members & Roles
-* **Myra (You)**: Task 1 - Server Endpoints & Containerization (Completed)
-* **[Teammate Name]**: Task 2 - Consistent Hash Map Implementation (In Progress)
-* **[Teammate Name]**: Task 3 - Load Balancer Orchestration (In Progress)
-
----
 
 ## 2. System Architecture & Components
 
