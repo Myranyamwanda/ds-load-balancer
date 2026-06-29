@@ -9,7 +9,7 @@ The system must maintain an active pool of $N=3$ default server instances. If a 
 
 ## 2. Team Member Task Assignments & Instructions
 
-### 👤 Task 1: Server Replicas & Containerization (Assigned to: Myra)
+### 👤 Task 1: Server Replicas & Containerization 
 **Status: COMPLETED**
 * **Objective:** Implement a lightweight web server and containerize it.
 * **Requirements:**
@@ -20,7 +20,7 @@ The system must maintain an active pool of $N=3$ default server instances. If a 
 
 ---
 
-### 👤 Task 2: Consistent Hash Map Data Structure (Assigned to: [Teammate Name])
+### 👤 Task 2: Consistent Hash Map Data Structure 
 **Status: IN PROGRESS**
 * **Objective:** Build the circular data structure backend that maps requests to server slots.
 * **Technical Constraints & Formulas:**
@@ -37,7 +37,7 @@ The system must maintain an active pool of $N=3$ default server instances. If a 
 
 ---
 
-### 👤 Task 3: Load Balancer Orchestration & API (Assigned to: [Teammate Name])
+### 👤 Task 3: Load Balancer Orchestration & API 
 **Status: IN PROGRESS**
 * **Objective:** Create the main entryway container that handles client routing and configuration updates.
 * **Instructions & API Endpoints to Implement:**
@@ -50,7 +50,7 @@ The system must maintain an active pool of $N=3$ default server instances. If a 
 
 ---
 
-### 👤 Task 4: Testing & Performance Analysis (Collaborative / Assigned to: [Teammate Name])
+### 👤 Task 4: Testing & Performance Analysis 
 **Status: UPCOMING**
 * **Objective:** Run benchmarks and generate visual performance charts to document inside this README.
 * **Experiments to Complete:**
