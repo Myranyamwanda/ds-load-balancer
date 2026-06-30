@@ -21,7 +21,7 @@ The system must maintain an active pool of $N=3$ default server instances. If a 
 ---
 
 ### 👤 Task 2: Consistent Hash Map Data Structure 
-**Status: IN PROGRESS**
+**Status: COMPLETED**
 * **Objective:** Build the circular data structure backend that maps requests to server slots.
 * **Technical Constraints & Formulas:**
   * Total Slots in circular map ($M$): `512`.
@@ -38,7 +38,7 @@ The system must maintain an active pool of $N=3$ default server instances. If a 
 ---
 
 ### 👤 Task 3: Load Balancer Orchestration & API 
-**Status: IN PROGRESS**
+**Status: COMPLETED**
 * **Objective:** Create the main entryway container that handles client routing and configuration updates.
 * **Instructions & API Endpoints to Implement:**
   * **Network Isolation:** Run everything inside a custom Docker network named `net1`. The load balancer must be exposed to the host machine on port `5000:5000`.
