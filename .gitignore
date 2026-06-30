@@ -1,1 +1,23 @@
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment 
+venv/
+env/
+.venv/
+
+# macOS system files - created automatically, not project files
+.DS_Store
+.DS_Store?
+._*
+
+
+# Logs
+*.log
+
+# Pytest cache (if you run tests)
+.pytest_cache/

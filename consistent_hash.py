@@ -49,8 +49,8 @@ class ConsistentHash:
     ) -> int:
 
         return (
-            request_id
-            + (2 * request_id)
+            (request_id ** 2)
+            + request_id
             + 17
         ) % self.M
 
@@ -63,11 +63,9 @@ class ConsistentHash:
 
         return (
 
-            server_id
-            + replica_id
-            + (2 * replica_id)
+            (server_id * 191)
+            + (replica_id * 53)
             + 25
-
         ) % self.M
 
 

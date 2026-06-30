@@ -1,23 +1,18 @@
-version: '3'
-
 services:
-
   load-balancer:
     build:
       context: .
       dockerfile: Dockerfile.lb
-
     container_name: load-balancer
-
+    privileged: true
     ports:
-      - "5000:5000"
-
+      - "5050:5000"
     networks:
       - net1
-
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   net1:
     driver: bridge
+    name: net1

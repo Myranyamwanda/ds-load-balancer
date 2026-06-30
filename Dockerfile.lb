@@ -1,0 +1,17 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# docker CLI isn't strictly required (docker-py talks to the socket directly),
+# but it's handy if you ever want to `docker exec` in and debug manually
+RUN apt-get update && apt-get install -y --no-install-recommends docker.io \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY load_balancer.py consistent_hash.py replica_manager.py health_monitor.py ./
+
+EXPOSE 5000
+
+CMD ["uvicorn", "load_balancer:app", "--host", "0.0.0.0", "--port", "5000"]
